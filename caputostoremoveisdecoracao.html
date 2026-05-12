@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caputo Store</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./img/315324440_540144747944399_1395444346807484659_n.jpg">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8f5f0;
+      overflow-x: hidden;
+    }
+
+    h1,h2,h3,h4 {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .hero-overlay {
+      background: linear-gradient(to right, rgba(0,0,0,.88), rgba(0,0,0,.35));
+    }
+
+    .gold {
+      color: #c9a46d;
+    }
+
+    .gold-bg {
+      background: #c9a46d;
+    }
+
+    .gold-bg:hover {
+      background: #b78e53;
+    }
+
+    .card-overlay {
+      background: linear-gradient(to top, rgba(0,0,0,.85), rgba(0,0,0,.15));
+    }
+
+    .zoom:hover img {
+      transform: scale(1.08);
+    }
+
+    img {
+      transition: .7s;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-black/70 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <div>
+        <h1 class="text-white text-3xl tracking-[5px] font-semibold leading-none">
+          CAPUTO
+        </h1>
+        <p class="text-[#c9a46d] text-[10px] tracking-[4px] uppercase mt-1">
+          Design & Móveis
+        </p>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-8 text-white text-sm font-medium">
+        <a href="#inicio" class="hover:text-[#c9a46d] transition">Início</a>
+        <a href="#sobre" class="hover:text-[#c9a46d] transition">Sobre</a>
+        <a href="#categorias" class="hover:text-[#c9a46d] transition">Categorias</a>
+        <a href="#ambientes" class="hover:text-[#c9a46d] transition">Ambientes</a>
+        <a href="#depoimentos" class="hover:text-[#c9a46d] transition">Depoimentos</a>
+      </nav>
+
+      <a href="https://wa.me/5511944440020" class="gold-bg text-white px-4 sm:px-6 lg:px-8 py-3 rounded-xl text-sm font-semibold transition-all duration-300">
+        Falar no WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="relative min-h-screen flex items-center">
+
+    <img
+      src="./img/inicio.avif"
+      class="absolute inset-0 w-full h-full object-cover"
+      alt="Sala sofisticada"
+    >
+
+    <div class="absolute inset-0 hero-overlay"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-32 pb-20 z-10">
+      <div class="max-w-3xl">
+
+        <span class="uppercase tracking-[5px] text-[#c9a46d] text-sm font-semibold">
+          Fabricação • Reforma • Higienização
+        </span>
+
+        <h2 class="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1] mt-6">
+          Fabricamos, reformamos e higienizamos sofás, poltronas e cabeceiras com acabamento premium.
+        </h2>
+
+        <p class="text-gray-300 text-lg md:text-xl leading-relaxed mt-7 max-w-2xl">
+          Especialistas em reforma, fabricação e higienização de sofás, poltronas, cadeiras e cabeceiras com qualidade profissional e atendimento personalizado.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 mt-10">
+          <a href="https://wa.me/5511999999999"
+            class="gold-bg text-white px-8 py-4 rounded-xl font-semibold text-center transition-all duration-300">
+            Falar no WhatsApp
+          </a>
+
+          <a href="#categorias"
+            class="border border-white/20 hover:bg-white hover:text-black text-white px-8 py-4 rounded-xl font-semibold text-center transition-all duration-300">
+            Conhecer Loja
+          </a>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-14">
+          <div class="bg-white/10 border border-white/10 backdrop-blur-md rounded-2xl p-5 text-white text-sm">
+            ✦ Reforma de Sofás
+          </div>
+
+          <div class="bg-white/10 border border-white/10 backdrop-blur-md rounded-2xl p-5 text-white text-sm">
+            ✦ Higienização Premium
+          </div>
+
+          <div class="bg-white/10 border border-white/10 backdrop-blur-md rounded-2xl p-5 text-white text-sm">
+            ✦ Fabricação Sob Medida
+          </div>
+
+          <div class="bg-white/10 border border-white/10 backdrop-blur-md rounded-2xl p-5 text-white text-sm">
+            ✦ Atendimento Especializado
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="py-24 bg-white px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
+
+      <div>
+        <span class="uppercase tracking-[5px] text-[#c9a46d] text-sm font-semibold">
+          Sobre a Caputo Store
+        </span>
+
+        <h2 class="text-5xl font-semibold mt-5 leading-tight text-[#111]">
+          Especialistas em sofás, poltronas e cabeceiras.
+        </h2>
+
+        <div class="w-20 h-[3px] bg-[#c9a46d] mt-6"></div>
+
+        <p class="text-gray-600 text-lg leading-relaxed mt-8">
+          A Caputo Store atua com fabricação, reforma e higienização de sofás, poltronas, cadeiras e cabeceiras. Trabalhamos com acabamento premium, materiais de alta qualidade e atendimento especializado para renovar e transformar ambientes.
+        </p>
+
+        <div class="grid sm:grid-cols-3 gap-6 mt-12">
+          <div>
+            <div class="text-4xl gold">✦</div>
+            <p class="mt-3 font-medium">Reforma Premium</p>
+          </div>
+
+          <div>
+            <div class="text-4xl gold">✦</div>
+            <p class="mt-3 font-medium">Higienização Profissional</p>
+          </div>
+
+          <div>
+            <div class="text-4xl gold">✦</div>
+            <p class="mt-3 font-medium">Fabricação Sob Medida</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src="./img/sobre.avif"
+          class="rounded-[32px] shadow-2xl h-[400px] lg:h-[650px] w-full object-cover"
+          alt="Ambiente premium"
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIAS -->
+<section id="categorias" class="py-20 md:py-24 bg-[#f6f2eb] px-4 sm:px-6 lg:px-8">
+
+  <div class="max-w-7xl mx-auto">
+
+    <!-- TÍTULO -->
+    <div class="text-center max-w-4xl mx-auto mb-14 md:mb-16">
+
+      <span class="uppercase tracking-[5px] text-[#c9a46d] text-xs sm:text-sm font-semibold">
+        Nossas Categorias
+      </span>
+
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl leading-tight font-semibold text-[#111] mt-5">
+        Soluções completas para renovar seu estofado.
+      </h2>
+
+      <p class="text-gray-600 text-base sm:text-lg mt-5 leading-relaxed">
+        Trabalhamos com fabricação, reforma e higienização premium
+        para transformar seus ambientes com sofisticação e conforto.
+      </p>
+
+    </div>
+
+    <!-- GRID -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
+
+      <!-- SOFÁS -->
+      <div class="group relative overflow-hidden rounded-[30px] shadow-2xl h-[360px] sm:h-[420px] bg-black">
+
+        <img
+          src="./img/sofa.avif"
+          alt="Sofás Premium"
+          class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
+        >
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-7">
+
+          <h3 class="text-white text-3xl font-semibold drop-shadow-xl">
+            Sofás
+          </h3>
+
+          <p class="text-gray-200 text-sm mt-3 leading-relaxed max-w-[260px]">
+            Fabricação e reforma de sofás sofisticados com acabamento premium.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- POLTRONAS -->
+      <div class="group relative overflow-hidden rounded-[30px] shadow-2xl h-[360px] sm:h-[420px] bg-black">
+
+        <img
+          src="./img/POLTRONAS.jpg"
+          alt="Poltronas Premium"
+          class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
+        >
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-7">
+
+          <h3 class="text-white text-3xl font-semibold drop-shadow-xl">
+            Poltronas
+          </h3>
+
+          <p class="text-gray-200 text-sm mt-3 leading-relaxed max-w-[260px]">
+            Poltronas modernas e elegantes para ambientes sofisticados.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CABECEIRAS -->
+      <div class="group relative overflow-hidden rounded-[30px] shadow-2xl h-[360px] sm:h-[420px] bg-black">
+
+        <img
+          src="./img/Cabeceiras.avif"
+          alt="Cabeceiras Premium"
+          class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
+        >
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-7">
+
+          <h3 class="text-white text-3xl font-semibold drop-shadow-xl">
+            Cabeceiras
+          </h3>
+
+          <p class="text-gray-200 text-sm mt-3 leading-relaxed max-w-[260px]">
+            Cabeceiras sofisticadas para quartos modernos e aconchegantes.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- HIGIENIZAÇÃO -->
+      <div class="group relative overflow-hidden rounded-[30px] shadow-2xl h-[360px] sm:h-[420px] bg-black">
+
+        <img
+          src="./img/Higienização.jpg"
+          alt="Higienização de Sofás"
+          class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
+        >
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-7">
+
+          <h3 class="text-white text-3xl font-semibold drop-shadow-xl">
+            Higienização
+          </h3>
+
+          <p class="text-gray-200 text-sm mt-3 leading-relaxed max-w-[260px]">
+            Limpeza profissional para sofás, poltronas e estofados premium.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- AMBIENTES -->
+  <section id="ambientes" class="py-20 md:py-24 bg-white px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+
+      <div class="text-center mb-14 md:mb-16">
+        <span class="uppercase tracking-[5px] text-[#c9a46d] text-xs md:text-sm font-semibold">
+          Ambientes Premium
+        </span>
+
+        <h2 class="text-3xl sm:text-4xl lg:text-6xl font-semibold mt-4 text-[#111] leading-tight">
+          Salas sofisticadas e quartos elegantes.
+        </h2>
+
+        <p class="text-gray-600 text-base md:text-lg mt-5 max-w-3xl mx-auto leading-relaxed px-2">
+          Ambientes inspiradores com sofás premium, cabeceiras sofisticadas,
+          cortinas elegantes e estofados modernos.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+
+        <!-- SALA PREMIUM -->
+        <div class="relative overflow-hidden rounded-[28px] md:rounded-[36px] h-[320px] sm:h-[340px] sm:h-[420px] lg:h-[560px] shadow-2xl group">
+          <img
+            src="./img/sala.avif" 
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" 
+            alt="Sala de estar sofisticada com Caputo Store">
+
+          
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-6 md:p-10">
+            <div>
+              <span class="uppercase tracking-[4px] text-[#d6b98c] text-xs md:text-sm font-semibold">
+                Sala Premium
+              </span>
+
+              <h3 class="text-white text-3xl sm:text-4xl lg:text-5xl font-semibold mt-3 leading-tight max-w-xl">
+                Sofás sofisticados e ambientes acolhedores.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- QUARTO PREMIUM -->
+        <div class="relative overflow-hidden rounded-[28px] md:rounded-[36px] h-[320px] sm:h-[340px] sm:h-[420px] lg:h-[560px] shadow-2xl group">
+          <img
+            src="./img/quarto.avif"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
+            alt="Quarto premium com cabeceira elegante"
+          >
+
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-6 md:p-10">
+            <div>
+              <span class="uppercase tracking-[4px] text-[#d6b98c] text-xs md:text-sm font-semibold">
+                Quarto Premium
+              </span>
+
+              <h3 class="text-white text-3xl sm:text-4xl lg:text-5xl font-semibold mt-3 leading-tight max-w-xl">
+                Cabeceiras modernas, cortinas elegantes e conforto absoluto.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos" class="py-24 bg-[#f6f2eb] px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+
+      <div class="text-center mb-16">
+        <span class="uppercase tracking-[5px] text-[#c9a46d] text-sm font-semibold">
+          Depoimentos
+        </span>
+
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold mt-5 text-[#111]">
+          Clientes satisfeitos com nossos serviços.
+        </h2>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-6">
+
+        <div class="bg-white rounded-[28px] p-8 shadow-lg">
+          <div class="gold text-xl">★★★★★</div>
+
+          <p class="text-gray-600 text-lg leading-relaxed mt-6">
+            “Atendimento impecável e móveis de altíssima qualidade.”
+          </p>
+
+          <div class="mt-8">
+            <h4 class="font-semibold">Juliana R.</h4>
+            <p class="text-gray-500">Cliente Caputo Store</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-[28px] p-8 shadow-lg">
+          <div class="gold text-xl">★★★★★</div>
+
+          <p class="text-gray-600 text-lg leading-relaxed mt-6">
+            “Produtos sofisticados e experiência premium do começo ao fim.”
+          </p>
+
+          <div class="mt-8">
+            <h4 class="font-semibold">Marcos T.</h4>
+            <p class="text-gray-500">Cliente Caputo Store</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-[28px] p-8 shadow-lg">
+          <div class="gold text-xl">★★★★★</div>
+
+          <p class="text-gray-600 text-lg leading-relaxed mt-6">
+            “A loja superou minhas expectativas em todos os detalhes.”
+          </p>
+
+          <div class="mt-8">
+            <h4 class="font-semibold">Carla P.</h4>
+            <p class="text-gray-500">Cliente Caputo Store</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="relative py-28 px-4 sm:px-6 lg:px-8 text-center text-white overflow-hidden">
+
+    <img
+      src="./img/cta.avif"
+      class="absolute inset-0 w-full h-full object-cover"
+      alt="Background"
+    >
+
+    <div class="absolute inset-0 bg-black/75"></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto">
+      <span class="uppercase tracking-[5px] text-[#d6b98c] text-sm font-semibold">
+        Atendimento Exclusivo
+      </span>
+
+      <h2 class="text-5xl md:text-6xl font-semibold mt-6 leading-tight">
+        Seu sofá merece um novo visual.
+      </h2>
+
+      <p class="text-gray-300 text-lg md:text-xl mt-8 leading-relaxed">
+        Solicite um orçamento personalizado para reforma, fabricação ou higienização de sofás, poltronas e cabeceiras.
+      </p>
+
+      <a href="https://wa.me/5511944440020"
+        class="inline-block mt-10 gold-bg text-white px-10 py-5 rounded-xl font-semibold transition-all duration-300">
+        Chamar no WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-white py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+      <div>
+        <h3 class="text-4xl tracking-[5px] font-semibold">
+          CAPUTO
+        </h3>
+
+        <p class="uppercase tracking-[4px] text-[#c9a46d] text-xs mt-2">
+          Design & Móveis
+        </p>
+      </div>
+
+    <div>
+
+  <h4 class="font-semibold text-lg text-white">
+    Contato
+  </h4>
+
+  <ul class="space-y-4 mt-5 text-gray-400">
+
+    <!-- TELEFONE -->
+    <li class="flex items-center gap-3">
+
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#c9a46d]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.129a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.209-.502l4.493 1.498A1 1 0 0121 15.72V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+      </svg>
+
+      <span>(11) 94444-0020</span>
+
+    </li>
+
+    <!-- INSTAGRAM -->
+    <li class="flex items-center gap-3">
+
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#c9a46d]" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 1.8h8.5a3.95 3.95 0 013.95 3.95v8.5a3.95 3.95 0 01-3.95 3.95h-8.5a3.95 3.95 0 01-3.95-3.95v-8.5A3.95 3.95 0 017.75 3.8zm8.95 1.35a.9.9 0 100 1.8.9.9 0 000-1.8zM12 6.8A5.2 5.2 0 106.8 12 5.206 5.206 0 0012 6.8zm0 1.8A3.4 3.4 0 118.6 12 3.404 3.404 0 0112 8.6z"/>
+      </svg>
+
+      <span>@caputostoremoveisdecoracao</span>
+
+    </li>
+
+    <!-- LOCALIZAÇÃO -->
+    <li class="flex items-center gap-3">
+
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#c9a46d]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+      </svg>
+
+      <span>São Paulo • SP</span>
+
+    </li>
+
+  </ul>
+
+</div>
+
+      <div>
+        <h4 class="font-semibold text-lg">Categorias</h4>
+
+        <ul class="space-y-3 mt-5 text-gray-400">
+          <li>Sofás</li>
+          <li>Poltronas</li>
+          <li>Cabeceiras</li>
+          <li>Higienização</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-lg">Atendimento</h4>
+
+        <ul class="space-y-3 mt-5 text-gray-400">
+          <li>Seg a Sex • 09h às 18h</li>
+          <li>Sábado • 09h às 13h</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10 mt-14 pt-8 text-center text-gray-500">
+      © 2026 Caputo Store • Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <!-- WHATSAPP -->
+  <a
+    href="https://wa.me/5511944440020"
+    class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 w-16 h-16 rounded-full flex items-center justify-center text-white text-3xl shadow-2xl z-50 transition-all duration-300"
+  >
+    ✆
+  </a>
+
+</body>
+</html>
